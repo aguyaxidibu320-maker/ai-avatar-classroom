@@ -1,8 +1,0 @@
-{
-  "name": "ai-avatar-classroom",
-  "version": "1.0.0",
-  "description": "AI 课堂 - 乌鸡汤老师（神经语音版）",
-  "dependencies": {
-    "msedge-tts": "^1.3.0"
-  }
-}
