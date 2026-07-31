@@ -1,0 +1,8 @@
+node_modules/
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.git/
+使用说明.md

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI 课堂 - 乌鸡汤老师带你学人工智能</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>🤖 六年级人工智能课程</h1>
+            <p class="subtitle">与 AI 老师「乌鸡汤」一起探索人工智能的奥秘</p>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 左侧：课程介绍 -->
+        <section class="course-info">
+            <h2>📚 课程介绍</h2>
+            <p>欢迎来到人工智能课堂！在这里，你将跟随 AI 老师「乌鸡汤」学习：</p>
+            <ul class="course-topics">
+                <li>🧠 人工智能是什么</li>
+                <li>🔍 AI 的分类与应用</li>
+                <li>🤖 机器学习基础知识</li>
+                <li>💬 提示词工程入门</li>
+                <li>⚖️ AI 伦理与安全</li>
+            </ul>
+            
+            <div class="instruction-box">
+                <h3>💡 如何开始对话？</h3>
+                <ol>
+                    <li>点击右下角的 <strong>「💬」</strong> 按钮展开虚拟人</li>
+                    <li>点击 <strong>「🎙️ 即时」</strong> 按钮开始语音对话</li>
+                    <li>或者直接在输入框 <strong>打字提问</strong></li>
+                    <li>乌鸡汤老师会记住你的名字和聊天内容哦！</li>
+                </ol>
+            </div>
+
+            <div class="tips-box">
+                <h3>💬 可以问乌鸡汤老师：</h3>
+                <div class="suggestion-buttons">
+                    <button onclick="askQuestion('什么是人工智能？')">什么是人工智能？</button>
+                    <button onclick="askQuestion('AI有哪些应用？')">AI有哪些应用？</button>
+                    <button onclick="askQuestion('机器学习是什么？')">机器学习是什么？</button>
+                    <button onclick="askQuestion('什么是提示词？')">什么是提示词？</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 右侧：对话显示面板 -->
+        <section class="chat-panel">
+            <div class="chat-header">
+                <h2>💬 对话记录</h2>
+                <button id="clearChat" class="clear-btn" onclick="clearChatLog()">清除记录</button>
+            </div>
+            <div id="chatLog" class="chat-log">
+                <div class="welcome-message">
+                    <p>👋 欢迎来到 AI 课堂！</p>
+                    <p>点击右下角的虚拟人开始与<strong>乌鸡汤老师</strong>对话吧！</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页面底部 -->
+    <footer class="page-footer">
+        <p>🤖 AI 课堂 · 乌鸡汤老师 | 适合六年级学生学习</p>
+        <p>💡 提示：请使用 <strong>Chrome 浏览器</strong> 以获得最佳体验</p>
+    </footer>
+
+    <!-- 嵌入 AI 虚拟人组件 -->
+    <script 
+        src="core/embed.js"
+        data-widget="core/widget.html"
+        data-knowledge="core/knowledge.js"
+        data-mode="companion"
+        data-lang="zh-TW"
+        data-look="false"
+    ></script>
+
+    <!-- 自定义脚本：同步对话记录 -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
